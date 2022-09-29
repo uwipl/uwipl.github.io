@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<!-- Template by Quackit.com -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Information Processing Lab</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+  </head>
+
+  <body data-spy="scroll" data-target="#topNav">
+
+    <nav id="topNav" class="navbar navbar-full navbar-fixed-top navbar-dark" style="background-color: #4b2e83;">
+        <div class="container">
+            <button class="navbar-toggler hidden-md-up pull-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+                &#9776;
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo/ipl-logo-white-50x30.png">
+            </a>
+            <div class="collapse navbar-toggleable-sm" id="collapsingNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="people.html">People</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="publication.html">Publication</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/ipl-uw" target="_blank">Software</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="life.html">Life</a>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section id="people">
+            <br><br>
+            <h2 class="display-4">Research Projects</h2>
+            <br><br>
+
+            <h3>Content</h3>
+            <ul>
+                <li>
+                    <a href="#h3-tracking">Tracking</a>
+                    <ul>
+                        <li><a href="#h4-scmtt">Single-Camera Multi-Object Tracking</a></li>
+                        <li><a href="#h4-tnt">TrackletNet Tracker (TNT)</a></li>
+                        <li><a href="#h4-iamot">Single-Camera Multi-Object Tracking and Segmentation (tracking-only)</a></li>
+                        <li><a href="#h4-lifts">Single-Camera Multi-Object Tracking and Segmentation (instance segmentation and tracking)</a></li>
+                        <li><a href="#h4-mtmct">Multi-Target Multi-Camera Tracking</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#h3-reid">Re-Identification</a>
+                </li>
+                <li>
+                    <a href="#h3-hpe">Human Pose Estimation</a>
+                </li>
+                <li>
+                    <a href="#h3-obj3dloc">Object 3D Localization</a>
+                    <ul>
+                        <li><a href="#h4-mo3dloc">Monocular Visual Object 3D Localization in Road Scenes</a></li>
+                    </ul>
+                </li>
+<!--                <li>-->
+<!--                    <a href="#h3-video-captioning">Video Captioning</a>-->
+<!--                    <ul>-->
+<!--                        <li><a href="#h4-video-captioning">Object-Oriented Video Captioning</a></li>-->
+<!--                    </ul>-->
+<!--                </li>-->
+            </ul>
+            <br><hr><br>
+
+            <h3 id="h3-tracking"><b>Tracking</b> 🚘🚶</h3>
+            <h4 id="h4-scmtt">Single-Camera Multi-Object Tracking</h4>
+            <h5>
+                <a href="https://github.com/zhengthomastang/2018AICity_TeamUW" target="_blank"><span class="tag tag-pill tag-info"><i class="fas fa-code"></i> Code</span></a> <a href="http://openaccess.thecvf.com/content_cvpr_2018_workshops/papers/w3/Tang_Single-Camera_and_Inter-Camera_CVPR_2018_paper.pdf" target="_blank"><span class="tag tag-pill tag-info"><i class="far fa-file-alt"></i> Paper</span></a>
+            </h5>
+            <p> Tracking of vehicles across multiple cameras with nonoverlapping views has been a challenging task for the intelligent transportation system (ITS). It is mainly because of high similarity among vehicle models, frequent occlusion, large variation in different viewing perspectives and low video resolution. In this work, we propose a fusion of visual and semantic features for both single-camera tracking (SCT) and inter-camera tracking (ICT). Specifically, a histogram-based adaptive appearance model is introduced to learn long-term history of visual features for each vehicle target. Besides, semantic features including trajectory smoothness, velocity change and temporal information are incorporated into a bottom-up clustering strategy for data association in each single camera view. Across different camera views, we also exploit other information, such as deep learning features, detected license plate features and detected car types, for vehicle re-identification. Additionally, evolutionary optimization is applied to camera calibration for reliable 3D speed estimation. Our algorithm achieves the top performance in both 3D speed estimation and vehicle reidentification at the <a href='https://www.aicitychallenge.org/2018-ai-city-challenge/'>NVIDIA AI City Challenge 2018</a>.</p>
+            <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/_i4numqiv7Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+            <br>
+
+            <h4 id="h4-tnt">TrackletNet Tracker (TNT)</h4>
+            <h5>
+                <a href="https://github.com/GaoangW/TNT" target="_blank"><span class="tag tag-pill tag-info"><i class="fas fa-code"></i> Code</span></a> <a href="https://arxiv.org/abs/1811.07258" target="_blank"><span class="tag tag-pill tag-info"><i class="far fa-file-alt"></i> Paper</span></a>
+            </h5>
+            <p>TrackletNet Tracker (TNT): combines temporal and appearance information together as a unified framework. First, we define a graph model which treats each tracklet as a vertex. The tracklets are generated by appearance similarity with CNN features and intersection-over-union (IOU) with epipolar constraints to compensate camera movement between adjacent frames. Then, for every pair of two tracklets, the similarity is measured by our designed multi-scale TrackletNet. Afterwards, the tracklets are clustered into groups which represent individual object IDs. Our proposed TNT has the ability to handle most of the challenges in MOT, and achieve promising results on MOT16 and MOT17 benchmark datasets compared with other state-of-the-art methods. TNT demo:</p>
+            <br>
+
+            <h4 id="h4-iamot">Single-Camera Multi-Object Tracking and Segmentation (tracking-only)</h4>
+            <p> Multiple object tracking (MOT) is a crucial task in com- puter vision society. However, most tracking-by-detection MOT methods, with available detected bounding boxes, cannot effectively handle static, slow-moving and fast-moving camera scenarios simultaneously due to ego-motion and frequent occlusion. In this work, we propose a novel tracking framework, called “instance-aware MOT” (IA- MOT), that can track multiple objects in either static or moving cameras by jointly considering the instance-level features and object motions. First, robust appearance fea- tures are extracted from a variant of Mask R-CNN detector with an additional embedding head, by sending the given detections as the region proposals. Meanwhile, the spatial attention, which focuses on the foreground within the bounding boxes, is generated from the given instance masks and applied to the extracted embedding features. In the tracking stage, object instance masks are aligned by feature similarity and motion consistency using the Hungarian association algorithm. Moreover, object re-identification (ReID) is incorporated to recover ID switches caused by long-term occlusion or missing detection. Overall, when evaluated on the MOTS20 and KITTI-MOTS dataset, our proposed method won the first place in Track 3 of the BMTT Challenge in CVPR2020 workshops. demo:</p>
+            <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/I0Jj80pyvec" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+            <br>
+
+            <h4 id="h4-lifts">Single-Camera Multi-Object Tracking and Segmentation (instance segmentation and tracking)</h4>
+            <p> In recent years, the computer vision society has made significant progress in multi-object tracking (MOT) and video object segmentation (VOS) respectively. Further progress can be achieved by effectively combining the following tasks together – detection, segmentation and tracking. In this work, we propose a multi-stage framework called “Lidar and monocular Image based multi-object Tracking and Segmentation (LIFTS)”. In the first stage, we use a 3D Part-Aware and Aggregation Network detec- tor on the point cloud data to get accurate 3D object locations. Then a graph-based 3D TrackletNet Tracker (3D TNT), which takes both CNN appearance features and object spatial information, is applied to robustly associate objects along time. The second stage involves a Cascade Mask R-CNN based network with PointRend head for ob- taining instance segmentation results from monocular images. Its input 2D pre-computed region proposals are generated from 3D detections in the first stage. Moreover, two post-processing techniques are further applied in the last stage: (1) generated mask results are further refined by a proposed optical-flow guided instance segmentation net- work; (2) object re-identification (ReID) is applied to recover ID switches caused by long-term occlusion; Overall, our proposed framework is evaluated on BMTT Challenge 2020 Track2: KITTI-MOTS dataset and achieves a 79.6 sMOTSA for Car and 64.9 for Pedestrian, with the 2nd place ranking in the competition. demo:</p>
+            <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/FsI-ofyInQ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+            <br>
+
+            <h4 id="h4-mtmct">Multi-Target Multi-Camera Tracking</h4>
+            <h5>
+                <a href="https://github.com/zhengthomastang/2018AICity_TeamUW" target="_blank"><span class="tag tag-pill tag-info"><i class="fas fa-code"></i> Code</span></a>
+                <a href="http://openaccess.thecvf.com/content_CVPRW_2019/html/AI_City/Hsu_Multi-Camera_Tracking_of_Vehicles_based_on_Deep_Features_Re-ID_and_CVPRW_2019_paper.html" target="_blank"><span class="tag tag-pill tag-info"><i class="far fa-file-alt"></i> Paper</span> </a>
+            </h5>
+            <p>Due to the exponential grow of traffic camera networks, the need of multi-camera tracking (MCT) for intelligent transportation has received more and more attentions. The challenges of MCT include similar vehicle models, large feature variation in different orientations, color variation of the same car due to lighting conditions, small object sizes and frequent occlusion, as well as the varied resolutions of videos. In this work, we propose an MCT system, which combines single-camera tracking (SCT), deep feature re-identification and camera link models for inter-camera tracking (ICT). For SCT, we use a <a href='https://arxiv.org/abs/1811.07258'>TrackletNet Tracker (TNT) </a>, which effectively generates the moving trajectories of all detected vehicles by exploiting temporal and appearance information of multiple tracklets that are created by associating bounding boxes of detected vehicles. The tracklets are generated based on CNN feature matching and intersection-over-union (IOU) in every single-camera view. In terms of deep feature re-identification, we exploit temporal attention model to extract the most discriminant feature of each trajectory. In addition, we propose the trajectory-based camera link models with order constraint to efficiently leverage the spatial and temporal information for ICT. The proposed method is evaluated on <a href = 'https://www.aicitychallenge.org/'>CVPR AI City Challenge 2019 City Flow dataset</a>, achieving IDF1 70.59%, which outperforms competing methods.</p>
+            <br>
+            <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/WS2Q6yhMxdI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+            <br>
+
+            <h4 id="h4-drone-tracking">Drone-Based Object Tracking 🛩 </h4>
+            <h5>
+                <a href="https://arxiv.org/pdf/1910.08259.pdf" target="_blank"><span class="tag tag-pill tag-info"><i class="far fa-file-alt"></i> Paper</span></a>
+            </h5>
+            <p>Drones, or general UAVs, equipped with a single camera have been widely deployed to a broad range of applications, such as aerial pho- tography, fast goods delivery and most importantly, surveillance. Despite the great progress achieved in computer vision algorithms, these algorithms are not usually optimized for dealing with images or video sequences acquired by drones, due to various challenges such as occlusion, fast camera motion and pose variation. In this pa- per, a drone-based multi-object tracking and 3D localization scheme is proposed based on the deep learning based object detection. We first combine a multi-object tracking method called TrackletNet Tracker (TNT) which utilizes temporal and appearance information to track detected objects located on the ground for UAV applica- tions. Then, we are also able to localize the tracked ground objects based on the group plane estimated from the Multi-View Stereo technique. The system deployed on the drone can not only detect and track the objects in a scene, but can also localize their 3D coordi- nates in meters with respect to the drone camera. The experiments have proved our tracker can reliably handle most of the detected objects captured by drones and achieve favorable 3D localization performance when compared with the state-of-the-art methods.</p>
+            <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/xr225CDL9ME" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+            <br>
+
+            <h3 id="h3-reid"><b>Re-Identification</b> 🚘🚶</h3>
+            <h5>
+                <a href="https://github.com/ipl-uw/2019-CVPR-AIC-Track-2-UWIPL" target="_blank"><span class="tag tag-pill tag-info"><i class="fas fa-code"></i> Code</span></a>  <a href="http://openaccess.thecvf.com/content_CVPRW_2019/html/AI_City/Huang_Multi-View_Vehicle_Re-Identification_using_Temporal_Attention_Model_and_Metadata_Re-ranking_CVPRW_2019_paper.html" target="_blank"><span class="tag tag-pill tag-info"><i class="far fa-file-alt"></i> Paper</span> </a>
+            </h5>
+            <p>Object re-identification (ReID) is an arduous task which requires matching an object across different non-overlapping camera views. Recently, many researchers are working on person ReID by taking advantages of appearance, human pose, temporal constraints, etc. However, vehicle ReID is even more challenging because vehicles have fewer discriminant features than human due to viewpoint orientation, changes in lighting condition and inter-class similarity. In this paper, we propose a viewpoint-aware temporal attention model for vehicle ReID utilizing deep learning features extracted from consecutive frames with vehicle orientation and metadata attributes (i.e., type, brand, color) being taken into consideration. In addition, re-ranking with soft decision boundary is applied as post-processing for result refinement. The proposed method is evaluated on the CVPR AI City Challenge 2019 dataset, achieving mAP of 79.17% with the second place ranking in the competition. Demo (example car ID-329):</p>
+            <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/HtpiAUBWS0w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+            <br>
+
+            <h3 id="h3-hpe"><b>Human Pose Estimation</b> 🕺</h3>
+            <h5>
+                <a href="https://ieeexplore.ieee.org/document/8695392" target="_blank"><span class="tag tag-pill tag-info"><i class="far fa-file-alt"></i> Paper</span></a>
+            </h5>
+            <p>In recent years, there is increasing need of analyzing human poses in the wild using monocular camera.  It is one of the important tasks in the areas of autonomous driving, action recognition, robotics, etc. It also plays a key role in human-oriented computer vision research, such as gaming, human computer interaction, and rehabilitation in health care. However, multi-person 3D pose estimation using monocular a static or moving camera in real-world scenarios remains a challenge, either requiring large-scale training data or high computation complexity due to the high degrees of freedom in 3D human poses. In our work, we effectively track and hierarchically estimate 3D human poses in natural videos in an efficient fashion.  Without the need of using labelled 3D training data, we hierarchically structure the high dimensional poses to efficiently address the challenge. We show good performance and high efficiency of multi-person 3D pose estimation on real-world videos, including street scenarios and various human daily activities from fixed and moving cameras, resulting in great new opportunities to understand and predict human behaviors.</p>
+            <br>
+
+            <h3 id="h3-obj3dloc"><b>Object 3D Localization</b> 🛣 </h3>
+            <h4 id="h4-mo3dloc">Monocular Visual Object 3D Localization in Road Scenes</h4>
+            <h5>
+                <a href="https://dl.acm.org/citation.cfm?doid=3343031.3350924" target="_blank"><span class="tag tag-pill tag-info"><i class="far fa-file-alt"></i> Paper</span></a>
+                <a href="http://yizhouwang.net/blog/2019/07/15/object-3d-localization/" target="_blank"><span class="tag tag-pill tag-info"><i class="far fa-newspaper"></i> Web</span></a>
+            </h5>
+            <p>3D localization of objects in road scenes is important for autonomous driving and advanced driver-assistance systems (ADAS). However, with common monocular camera setups, 3D information is difficult to obtain. In this paper, we propose a novel and robust method for 3D localization of monocular visual objects in road scenes by joint integration of depth estimation, ground plane estimation, and multi-object tracking techniques. Firstly, an object depth estima- tion method with depth confidence is proposed by utilizing the monocular depthmap from a CNN. Secondly, an adaptive ground plane estimation using both dense and sparse features is proposed to localize the objects when their depth estimation is not reliable. Thirdly, temporal information is taken into consideration by a new object tracklet smoothing method. Unlike most existing methods which only consider vehicle localization, our method is applicable for common moving objects in the road scenes, including pedestri- ans, vehicles, cyclists, etc. Moreover, the input depthmap can be replaced by some equivalent depth information from other sensors, like LiDAR, depth camera and Radar, which makes our system much more competitive compared with other object localization methods. As evaluated on KITTI dataset, our method achieves favorable per- formance on 3D localization of both pedestrians and vehicles when compared with the state-of-the-art vehicle localization methods, though no published performance on pedestrian 3D localization can be compared with, from the best of our knowledge.</p>
+            <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/r3x8OhNDnSA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+            <br>
+
+<!--            <h3 id="h3-video-captioning"><b>Video Captioning</b> 🎬</h3>-->
+<!--            <h4 id="h4-video-captioning">Object-Oriented Video Captioning</h4>-->
+<!--            <p>Different from traditional frame-level methods for video captioning, we adopt the methods for object detection and multi-object tracking to get all tracklets in the videos. With the tracklets, we can analyze the actions of all different objects along time. Moreover, we also consider the background in the scene, which is always ignored in the previous methods. All in all, we make the methods for video captioning more like the thought while human watching videos.</p>-->
+<!--            <br>-->
+
+        </section>
+    </div> <!-- /container -->
+        
+    <div class="container">
+        <div class="footer">
+            <br>
+            <p>&copy; 2020 IPL@UW</p>
+            <br>
+        </div>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+
+    <!-- Tether -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
+
+    <!-- Initialize Bootstrap functionality -->
+    <script>
+    // Initialize tooltip component
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+
+    // Initialize popover component
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+    </script>    
+
+  </body>
+</html>
